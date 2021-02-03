@@ -1,23 +1,23 @@
 import React, { Fragment } from 'react';
-import "./App.css";
+import "../App.css";
 
-const Q10 = () => {
+const Q3 = () => {
     return (
         <form>
             <div className="qa-container">
                 <p className="q-txt">
-                    시험기간 샤워는
+                    나는 생협에 가면
                 </p>
             
             <div className="a-box">
                 <div
                     className="img-box"
                     style={{
-                    "background-image": `url(./imgs/q_10_1.jpg)`,
+                    "background-image": `url(./imgs/q_3_1.jpeg)`,
                     }}
                 ></div>
                 <label>
-                    <span>학교에서</span>
+                    <span>아이스티노</span>
                 </label>
             </div>
 
@@ -25,11 +25,11 @@ const Q10 = () => {
                 <div
                     className="img-box"
                     style={{
-                    "background-image": `url(./imgs/q_10_2.jpg)`,
+                    "background-image": `url(./imgs/q_3_2.png)`,
                     }}
                 ></div>
                 <label>
-                    <span>집에서</span>
+                    <span>아메리카노</span>
                 </label>
             </div>
             </div>
@@ -38,4 +38,4 @@ const Q10 = () => {
     );
   };
 
-export default Q10;
+export default Q3;

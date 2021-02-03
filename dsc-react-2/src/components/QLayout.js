@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from "react-router-dom";
-import "./App.css";
-import Button from './Button';
+import "../App.css";
+// import Button from './Button';
 
 
 // USE STATE : 함수형 컴포넌트가 가변적 상태를 지니고 있을 수 있게 함 
