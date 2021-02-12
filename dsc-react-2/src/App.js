@@ -14,14 +14,13 @@ import Q9 from './components/Q9';
 import Q10 from './components/Q10';
 import Q11 from './components/Q11';
 import Q12 from './components/Q12';
+import Result from './components/Result';
 
 
 const App = () => {
   return (
     <div className="app-frame">
-      <QLayout>
-        <Q2 />
-      </QLayout>
+      <Result />
     </div>
   );
 };

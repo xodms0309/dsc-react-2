@@ -1,0 +1,34 @@
+.resultWrapper{
+    padding:20px;
+}
+.header{
+    color:#005f48;
+    font-size: 30px;
+}
+.colName{
+    margin: 0 60px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size:30px;
+}
+.title{
+    color:#005f48;
+    font-size: 30px;
+    font-weight:700;
+}
+.trybtn{
+    position:absolute;
+    margin: 0 auto;
+    bottom:2rem;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.trybtn button{
+    padding: 0.5rem;
+    font-size:30px;
+    font-weight:700;
+    background:white;
+    border: none;
+    border-radius:1rem;
+  }
