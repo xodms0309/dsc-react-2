@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import "../css/StartPage.css"
 const StartPage=()=>{
@@ -12,3 +13,16 @@ const StartPage=()=>{
     );
 }
 export default StartPage;
+=======
+import React from "react";
+
+const StartPage = () => {
+  return (
+    <div>
+      <h2>StartPage</h2>
+    </div>
+  );
+};
+
+export default StartPage;
+>>>>>>> 5f26d76df6f4848e44de8d71941304ce0a845fd7
