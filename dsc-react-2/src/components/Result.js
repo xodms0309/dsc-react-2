@@ -1,9 +1,8 @@
 import React, {Fragment,useState, useEffect} from "react";
 import { useSelector, shallowEqual } from "react-redux";
-// import '../css/Result.css';
-import { connect } from "react-redux";
+import '../css/Result.css';
 import DATA from '../shared/data';
-import Counter from './Counter'
+import styled from "styled-components";
 const Result=()=>{
   
   const [result, setResult]=useState({});
@@ -11,7 +10,7 @@ const Result=()=>{
       const nextData=DATA.filter((data)=>data.id===index);
       setResult(nextData[0]);
     };
-    const{LiberalArts,  SocialSciences,NaturalScience,Engineering,Music,ArtAndDesign,Education,BusinessAdminitration,
+    const{LiberalArts,  SocialSciences,NaturalScience,Engineering,Music,ArtAndDesign,Education,BusinessAdministration,
           ScienceAndIndustry, Medicine, Nursing, Pharmacy, Scranton, Hokma 
         }=useSelector(
           state=>({
@@ -22,7 +21,7 @@ const Result=()=>{
             Music:state.counter.Music,
             ArtAndDesign:state.counter.ArtAndDesign,
             Education:state.counter.Education,
-            BusinessAdminitration:state.counter.BusinessAdminitration,
+            BusinessAdministration:state.counter.BusinessAdministration,
             ScienceAndIndustry:state.counter.ScienceAndIndustry,
             Medicine:state.counter.Medicine,
             Nursing: state.counter.Nursing,
@@ -32,7 +31,8 @@ const Result=()=>{
          }),
           shallowEqual
         );
-    const list=[LiberalArts, Medicine];
+    const list=[LiberalArts, SocialSciences,NaturalScience,Engineering,Music,ArtAndDesign,Education,BusinessAdministration,
+      ScienceAndIndustry, Medicine, Nursing, Pharmacy, Scranton, Hokma ];
     const max=Math.max.apply(null, list);
     let index=0;
     for (let i=0; i<list.length;i++){
@@ -63,13 +63,13 @@ const Result=()=>{
 
         <div className="colName">
           {result.colName} <br />
-          {result.nickname}
         </div>
-
+        <div className="nickname">
+          🌳{result.fm}🌳 {result.nickname} <br />
+        </div>
         <div className="picture">
 
         </div>
-
         <div className="title">
             소개
         </div>
@@ -89,9 +89,9 @@ const Result=()=>{
         <div className="content">
           {result.major}
         </div>
-        <div className="trybtn">
+        {/* <div className="trybtn">
             <button type="button">다시하기</button>
-        </div>
+        </div> */}
 
       </div>
         {/* developer info */}

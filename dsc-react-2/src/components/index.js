@@ -10,6 +10,8 @@ export { default as Q9 } from "./Q9";
 export { default as Q10 } from "./Q10";
 export { default as Q11 } from "./Q11";
 export { default as Q12 } from "./Q12";
+export { default as Q13 } from "./Q13";
 export { default as Counter } from "./Counter";
 export { default as QLayout } from "./QLayout";
 export { default as StartPage } from "./StartPage";
+export { default as Result } from "./Result";

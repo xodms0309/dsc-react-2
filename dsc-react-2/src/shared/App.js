@@ -18,24 +18,24 @@ import {
   Q13,
   QLayout,
   StartPage,
-  Counter,
+  Result,
 } from "../components";
 
 const App = () => {
-  const [score_Liberal, setScore_Liberal] = useState(0);
-  const [score_Social, setScore_Social] = useState(0);
-  const [score_Science, setScore_Science] = useState(0);
-  const [score_Engineering, setScore_Engineering] = useState(0);
-  const [score_Music, setScore_Music] = useState(0);
-  const [score_Art, setScore_Art] = useState(0);
-  const [score_Edu, setScore_Edu] = useState(0);
-  const [score_Business, setScore_Business] = useState(0);
-  const [score_Industry, setScore_Industry] = useState(0);
-  const [score_Medicine, setScore_Medicine] = useState(0);
-  const [score_Nursing, setScore_Nursing] = useState(0);
-  const [score_Pharmacy, setScore_Pharmacy] = useState(0);
-  const [score_Scranton, setScore_Scranton] = useState(0);
-  const [score_Hokma, setScore_Hokma] = useState(0);
+  // const [score_Liberal, setScore_Liberal] = useState(0);
+  // const [score_Social, setScore_Social] = useState(0);
+  // const [score_Science, setScore_Science] = useState(0);
+  // const [score_Engineering, setScore_Engineering] = useState(0);
+  // const [score_Music, setScore_Music] = useState(0);
+  // const [score_Art, setScore_Art] = useState(0);
+  // const [score_Edu, setScore_Edu] = useState(0);
+  // const [score_Business, setScore_Business] = useState(0);
+  // const [score_Industry, setScore_Industry] = useState(0);
+  // const [score_Medicine, setScore_Medicine] = useState(0);
+  // const [score_Nursing, setScore_Nursing] = useState(0);
+  // const [score_Pharmacy, setScore_Pharmacy] = useState(0);
+  // const [score_Scranton, setScore_Scranton] = useState(0);
+  // const [score_Hokma, setScore_Hokma] = useState(0);
   //이걸다 props로 넘겨서 선택할때 점수를 반영하도록 만듬
   //<Q1 score_Hokma={this.state.score_Hokma} -> 근데이걸 변경하면 메인에서도 변경이되는건지 모르겟음 ㅅ
   //아니면 data.js에 각자 score 파트를넣고 변경이되는지 알아봐야함
@@ -110,10 +110,13 @@ const App = () => {
             <Q12></Q12>
           </QLayout>
         </Route>
-        <Route path="/Q13" component={Counter}>
-          <QLayout step={13}>
-            <Counter></Counter>
+        <Route path="/Q13" component={Q13}>
+          <QLayout step={12}>
+            <Q13></Q13>
           </QLayout>
+        </Route>
+        <Route path="/Result" component={Result}>
+            <Result></Result>
         </Route>
       </Switch>
     </div>
