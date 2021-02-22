@@ -1,0 +1,50 @@
+
+  .wrapper{
+    margin: 30px auto;
+    max-width: 414px;
+    max-height: 600px;
+    position:relative;
+  }
+  .btn{
+    position:absolute;
+    margin: 0 auto;
+    bottom:1%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .btn a{
+    color:black;
+    text-decoration: none;
+  }
+  img {
+    max-width: 414px;
+    opacity: 0.8;
+
+
+  }
+  .name{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:45px;
+    font-style:italic;
+    font-weight:700;
+    text-align:center;
+    color:white;
+    white-space:nowrap;
+    background: linear-gradient(to top, #FFE400 50%, transparent 50%);
+  }
+  .name_p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-150%);
+    font-size:18px;
+    font-weight:250;
+    text-align:center;
+    white-space:nowrap;
+    color:white;
+
+  }
+

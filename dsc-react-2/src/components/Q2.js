@@ -1,11 +1,8 @@
-import React, { Fragment, Component } from "react";
+import React from "react";
 import "../App.css";
-import DATA from "../shared/data";
 import ButtonComponent from "./ButtonComponent";
 
 const Q2 = () => {
-  let test = DATA.filter((data) => data.id === 1);
-
   return (
     <form>
       <div className="qa-container">
@@ -14,13 +11,13 @@ const Q2 = () => {
           step={2}
           type={"A"}
           txt={"있다"}
-          imgUrl={"./imgs/q_2_1.jpeg"}
+          imgUrl={"./imgs/q_2_1.png"}
         ></ButtonComponent>
         <ButtonComponent
           step={2}
           type={"B"}
           txt={"없다"}
-          imgUrl={"./imgs/q_2_2.jpeg"}
+          imgUrl={"./imgs/q_2_2.png"}
         ></ButtonComponent>
       </div>
     </form>
