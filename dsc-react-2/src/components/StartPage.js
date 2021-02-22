@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/StartPage.css";
+import "../App.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 

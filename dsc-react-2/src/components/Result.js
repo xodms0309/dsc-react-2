@@ -1,6 +1,6 @@
 import React, {Fragment,useState, useEffect} from "react";
 import { useSelector, shallowEqual } from "react-redux";
-import '../css/Result.css';
+import '../App.css';
 import DATA from '../shared/data';
 const Result=()=>{
   
@@ -67,7 +67,7 @@ const Result=()=>{
           {result.colName} <br />
         </div>
         <div className="nickname">
-          🌳{result.fm}🌳 {result.nickname} <br />
+          🌳{result.fm} {result.nickname}🌳 <br />
         </div>
         <div className="picture"></div>
         <div className="title">소개</div>
