@@ -53,56 +53,50 @@ const Result=()=>{
         </div>
         <p className="top-bar-txt">EWHA MBTI</p>
       </div>
+
       <div className="resultWrapper">
         <div className="header">
-            당신에게<br />
-            잘 어울리는<br />
-            <strong>단대</strong>는?
-        </div>    
+          당신에게
+          <br />
+          잘 어울리는
+          <br />
+          <strong>단대</strong>는?
+        </div>
 
         <div className="colName">
           {result.colName} <br />
         </div>
         <div className="nickname">
           🌳{result.fm}🌳 {result.nickname} <br />
-          
         </div>
-        <div className="picture">
+        <div className="picture"></div>
+        <div className="title">소개</div>
+        <div className="content">{result.intro}</div>
 
-        </div>
-        <div className="title">
-            소개
-        </div>
+        <div className="title">교육목표</div>
         <div className="content">
-          {result.intro}
+          {result.goal1} <br />
+          {result.goal2} <br />
+          {result.goal3} <br />
+          {result.goal4} <br />
+          {result.goal5} <br />
         </div>
-
-        <div className="title">
-            교육목표
-        </div>
-        <div className="content">
-          {result.goal}
-        </div>
-        <div className="title">
-            소속 학과
-        </div>
-        <div className="content">
-          {result.major}
-        </div>
+        <div className="title">소속 학과</div>
+        <div className="content">{result.major}</div>
         {/* <div className="trybtn">
             <button type="button">다시하기</button>
         </div> */}
-
       </div>
-        {/* developer info */}
-        <div className="bottom-bar">
-            <div className="developer-logo-img-box" 
-            style={{"background-image": `url(./imgs/dsc_logo.png)`,}}>
-        </div>
+      
+      {/* developer info */}
+      <div className="bottom-bar">
+        <div
+          className="developer-logo-img-box"
+          style={{ "background-image": `url(./imgs/dsc_logo.png)` }}
+        ></div>
         <p>@dsc_react_team2</p>
       </div>
-      </Fragment>
-    );
-
-}
+    </Fragment>
+  );
+};
 export default Result;

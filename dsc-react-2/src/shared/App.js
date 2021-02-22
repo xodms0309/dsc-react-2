@@ -17,34 +17,11 @@ import {
   Q12,
   Q13,
   QLayout,
-  Counter,
   StartPage,
   Result,
 } from "../components";
 
 const App = () => {
-  // const [score_Liberal, setScore_Liberal] = useState(0);
-  // const [score_Social, setScore_Social] = useState(0);
-  // const [score_Science, setScore_Science] = useState(0);
-  // const [score_Engineering, setScore_Engineering] = useState(0);
-  // const [score_Music, setScore_Music] = useState(0);
-  // const [score_Art, setScore_Art] = useState(0);
-  // const [score_Edu, setScore_Edu] = useState(0);
-  // const [score_Business, setScore_Business] = useState(0);
-  // const [score_Industry, setScore_Industry] = useState(0);
-  // const [score_Medicine, setScore_Medicine] = useState(0);
-  // const [score_Nursing, setScore_Nursing] = useState(0);
-  // const [score_Pharmacy, setScore_Pharmacy] = useState(0);
-  // const [score_Scranton, setScore_Scranton] = useState(0);
-  // const [score_Hokma, setScore_Hokma] = useState(0);
-  //이걸다 props로 넘겨서 선택할때 점수를 반영하도록 만듬
-  //<Q1 score_Hokma={this.state.score_Hokma} -> 근데이걸 변경하면 메인에서도 변경이되는건지 모르겟음 ㅅ
-  //아니면 data.js에 각자 score 파트를넣고 변경이되는지 알아봐야함
-
-  //근데 일단 다른건 둘째치고 걍 버튼누르면 다음페이지로 넘어가는거부터 구현하는게 나을듯
-
-  //const hello = DATA.filter((data) => data.id === 1);
-
   return (
     <div className="app-frame">
       <Switch>
@@ -112,7 +89,7 @@ const App = () => {
           </QLayout>
         </Route>
         <Route path="/Q13" component={Q13}>
-          <QLayout step={13}>
+          <QLayout step={12}>
             <Q13></Q13>
           </QLayout>
         </Route>

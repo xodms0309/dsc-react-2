@@ -1,8 +1,6 @@
 import React, { Fragment, useState, Component } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import DATA from "../shared/data";
-import { useSelector } from "react-redux";
 import styled from "styled-components";
 import {
   increment,
@@ -89,55 +87,38 @@ const StyleSpan = styled.span`
   transform: translateX(-50%);
 `;
 
-//선택한 사항에 따라서 점수를 부여하는 함수
-// const ScoreRecord = (e) => {};
-//
-// let img = "";
-//
-// if (props.step == 1) {
-//   img = props.step + 1;
-// }
-//  background-image: url(${(props) => props.imgFile});
-
-//이건되는데 setScore가 안되는거냐 시발이 ?
-//const [score, setScore] = useState({});
-//const score1 = DATA.filter((data) => data.id == 1);
-
-//const globalCondition = useSelector((state) => state.id);
-//const globalCondition = useSelector((state) => state.condition);
-
 function ButtonComponent(props) {
   const BtnType = props.type;
   const step = props.step + 1;
   //const onBtnClick = () => {};
 
   function selectA(value) {
-    if (value == 1) return props.onStepOneA;
-    else if (value == 2) return props.onStepTwoA;
-    else if (value == 3) return props.onStepThreeA;
-    else if (value == 4) return props.onStepFourA;
-    else if (value == 5) return props.onStepFiveA;
-    else if (value == 6) return props.onStepSixA;
-    else if (value == 7) return props.onStepSevenA;
-    else if (value == 8) return props.onStepEightA;
-    else if (value == 9) return props.onStepNineA;
-    else if (value == 10) return props.onStepTenA;
-    else if (value == 11) return props.onStepTenoneA;
+    if (value === 1) return props.onStepOneA;
+    else if (value === 2) return props.onStepTwoA;
+    else if (value === 3) return props.onStepThreeA;
+    else if (value === 4) return props.onStepFourA;
+    else if (value === 5) return props.onStepFiveA;
+    else if (value === 6) return props.onStepSixA;
+    else if (value === 7) return props.onStepSevenA;
+    else if (value === 8) return props.onStepEightA;
+    else if (value === 9) return props.onStepNineA;
+    else if (value === 10) return props.onStepTenA;
+    else if (value === 11) return props.onStepTenoneA;
     else return props.onStepTentwoA;
   }
 
   function selectB(value) {
-    if (value == 1) return props.onStepOneB;
-    else if (value == 2) return props.onStepTwoB;
-    else if (value == 3) return props.onStepThreeB;
-    else if (value == 4) return props.onStepFourB;
-    else if (value == 5) return props.onStepFiveB;
-    else if (value == 6) return props.onStepSixB;
-    else if (value == 7) return props.onStepSevenB;
-    else if (value == 8) return props.onStepEightB;
-    else if (value == 9) return props.onStepNineB;
-    else if (value == 10) return props.onStepTenB;
-    else if (value == 11) return props.onStepTenoneB;
+    if (value === 1) return props.onStepOneB;
+    else if (value === 2) return props.onStepTwoB;
+    else if (value === 3) return props.onStepThreeB;
+    else if (value === 4) return props.onStepFourB;
+    else if (value === 5) return props.onStepFiveB;
+    else if (value === 6) return props.onStepSixB;
+    else if (value === 7) return props.onStepSevenB;
+    else if (value === 8) return props.onStepEightB;
+    else if (value === 9) return props.onStepNineB;
+    else if (value === 10) return props.onStepTenB;
+    else if (value === 11) return props.onStepTenoneB;
     else return props.onStepTentwoB;
   }
 

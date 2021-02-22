@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from "react";
+import React from "react";
 import "../App.css";
 import ButtonComponent from "./ButtonComponent";
 
@@ -11,13 +11,13 @@ const Q7 = () => {
           step={7}
           type={"A"}
           txt={"4연속 우주공강"}
-          imgUrl={"./imgs/q_7_1.jpg"}
+          imgUrl={"./imgs/q_7_1.png"}
         ></ButtonComponent>
         <ButtonComponent
           step={7}
           type={"B"}
           txt={"4연강"}
-          imgUrl={"./imgs/q_7_2.jpg"}
+          imgUrl={"./imgs/q_7_2.png"}
         ></ButtonComponent>
       </div>
     </form>
