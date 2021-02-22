@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const StartPage=()=>{
     return(
         <div className="wrapper">
-            <img src="./imgs/startpage.png"></img>
+            
             <div className="name">
                 EWHA<br /> MBTI
             </div>

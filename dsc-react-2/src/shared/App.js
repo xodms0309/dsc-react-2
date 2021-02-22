@@ -17,6 +17,7 @@ import {
   Q12,
   Q13,
   QLayout,
+  Counter,
   StartPage,
   Result,
 } from "../components";
@@ -111,7 +112,7 @@ const App = () => {
           </QLayout>
         </Route>
         <Route path="/Q13" component={Q13}>
-          <QLayout step={12}>
+          <QLayout step={13}>
             <Q13></Q13>
           </QLayout>
         </Route>

@@ -2,7 +2,6 @@ import React, {Fragment,useState, useEffect} from "react";
 import { useSelector, shallowEqual } from "react-redux";
 import '../css/Result.css';
 import DATA from '../shared/data';
-import styled from "styled-components";
 const Result=()=>{
   
   const [result, setResult]=useState({});
@@ -10,7 +9,7 @@ const Result=()=>{
       const nextData=DATA.filter((data)=>data.id===index);
       setResult(nextData[0]);
     };
-    const{LiberalArts,  SocialSciences,NaturalScience,Engineering,Music,ArtAndDesign,Education,BusinessAdministration,
+    const{LiberalArts, SocialSciences,NaturalScience,Engineering,Music,ArtAndDesign,Education,BusinessAdministration,
           ScienceAndIndustry, Medicine, Nursing, Pharmacy, Scranton, Hokma 
         }=useSelector(
           state=>({
@@ -66,6 +65,7 @@ const Result=()=>{
         </div>
         <div className="nickname">
           🌳{result.fm}🌳 {result.nickname} <br />
+          
         </div>
         <div className="picture">
 

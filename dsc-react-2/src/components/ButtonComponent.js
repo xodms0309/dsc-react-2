@@ -81,7 +81,7 @@ const StyleLabel = styled.label`
 
 const StyleSpan = styled.span`
   position: absolute;
-  font-family: sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   bottom: 10px;
   left: 50%;
   font-size: 18px;

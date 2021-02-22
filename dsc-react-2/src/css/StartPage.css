@@ -1,8 +1,17 @@
-
+@font-face {
+  font-family: 'ghanachoco';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'ghanachoco';
+}
   .wrapper{
     margin: 30px auto;
     padding: 30px 0;
     max-width: 414px;
+    height:816px;
     position:relative
   }
   .btn{
@@ -36,6 +45,7 @@
     left:50%;
     transform:translate(-50%,-50%);
     font-size:60px;
+    font-family: 'ghanachoco';
     font-style:italic;
     font-weight:700;
     text-align:center;
