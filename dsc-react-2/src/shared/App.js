@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../App.css";
 //import DATA from "../data";
 import { Switch, Route } from "react-router-dom";

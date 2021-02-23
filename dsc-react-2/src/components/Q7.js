@@ -10,7 +10,7 @@ const Q7 = () => {
         <ButtonComponent
           step={7}
           type={"A"}
-          txt={"4연속 우주공강"}
+          txt={"우주공강"}
           imgUrl={"./imgs/q_7_1.png"}
         ></ButtonComponent>
         <ButtonComponent

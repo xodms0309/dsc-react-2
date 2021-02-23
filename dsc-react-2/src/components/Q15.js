@@ -21,7 +21,7 @@ const Button = styled.div`
 
 const StyleSpan = styled.span`
   position: absolute;
-  font-family: sans-serif;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   color: black;
   bottom: 15px;
   left: 50%;
@@ -38,7 +38,7 @@ const Q15 = (props) => {
       <div className="btn">
         <Button type="button">
           <Link to="Result">
-            <StyleSpan>결과 보기</StyleSpan>
+            <StyleSpan><strong>결과 보기</strong></StyleSpan>
           </Link>
         </Button>
       </div>

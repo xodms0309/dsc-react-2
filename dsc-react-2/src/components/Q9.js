@@ -10,7 +10,7 @@ const Q9 = () => {
         <ButtonComponent
           step={9}
           type={"A"}
-          txt={"몰아서(밤샘) 한"}
+          txt={"몰아서(밤샘) 한다"}
           imgUrl={"./imgs/q_9_1.jpg"}
         ></ButtonComponent>
         <ButtonComponent

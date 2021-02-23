@@ -17,7 +17,7 @@ const Q14 = () => {
           step={14}
           type={"B"}
           txt={"우글(통글)"}
-          imgUrl={"./imgs/q_14_2.png"}
+          imgUrl={"./imgs/q_14_2.jpg"}
         ></ButtonComponent>
       </div>
     </form>

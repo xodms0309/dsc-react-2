@@ -20,7 +20,7 @@ const QLayout = (props) => {
       {/* progress bar */}
       <div className="step-container">
         <p>{props.step}/14</p>
-        <div className="step" style={{ width: props.step * 25 }} />
+        <div className="step" style={{ width: props.step * 27 }} />
         <div className="step-bg" />
       </div>
 
