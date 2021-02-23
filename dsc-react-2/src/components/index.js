@@ -11,6 +11,8 @@ export { default as Q10 } from "./Q10";
 export { default as Q11 } from "./Q11";
 export { default as Q12 } from "./Q12";
 export { default as Q13 } from "./Q13";
+export { default as Q14 } from "./Q14";
+export { default as Q15 } from "./Q15";
 export { default as Counter } from "./Counter";
 export { default as QLayout } from "./QLayout";
 export { default as StartPage } from "./StartPage";

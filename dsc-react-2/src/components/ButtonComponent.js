@@ -16,6 +16,8 @@ import {
   step_tenA,
   step_tenoneA,
   step_tentwoA,
+  step_tenthreeA,
+  step_tenfourA,
   step_oneB,
   step_twoB,
   step_threeB,
@@ -28,6 +30,8 @@ import {
   step_tenB,
   step_tenoneB,
   step_tentwoB,
+  step_tenthreeB,
+  step_tenfourB,
 } from "../actions";
 import { connect } from "react-redux";
 
@@ -104,6 +108,8 @@ function ButtonComponent(props) {
     else if (value === 9) return props.onStepNineA;
     else if (value === 10) return props.onStepTenA;
     else if (value === 11) return props.onStepTenoneA;
+    else if (value === 12) return props.onStepTentwoA;
+    else if (value === 13) return props.onStepTenthreeA;
     else return props.onStepTentwoA;
   }
 
@@ -119,6 +125,8 @@ function ButtonComponent(props) {
     else if (value === 9) return props.onStepNineB;
     else if (value === 10) return props.onStepTenB;
     else if (value === 11) return props.onStepTenoneB;
+    else if (value === 12) return props.onStepTentwoB;
+    else if (value === 13) return props.onStepTenthreeB;
     else return props.onStepTentwoB;
   }
 
@@ -153,6 +161,8 @@ let mapDispatchToProps = (dispatch) => {
     onStepTenA: () => dispatch(step_tenA()),
     onStepTenoneA: () => dispatch(step_tenoneA()),
     onStepTentwoA: () => dispatch(step_tentwoA()),
+    onStepTenthreeA: () => dispatch(step_tenthreeA()),
+    onStepTenfourA: () => dispatch(step_tenfourA()),
     onStepOneB: () => dispatch(step_oneB()),
     onStepTwoB: () => dispatch(step_twoB()),
     onStepThreeB: () => dispatch(step_threeB()),
@@ -165,6 +175,8 @@ let mapDispatchToProps = (dispatch) => {
     onStepTenB: () => dispatch(step_tenB()),
     onStepTenoneB: () => dispatch(step_tenoneB()),
     onStepTentwoB: () => dispatch(step_tentwoB()),
+    onStepTenthreeB: () => dispatch(step_tenthreeB()),
+    onStepTenfourB: () => dispatch(step_tenfourB()),
   };
 };
 

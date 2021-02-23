@@ -11,6 +11,8 @@ export const ASTEP_NINE = "ASTEP_NINE";
 export const ASTEP_TEN = "ASTEP_TEN";
 export const ASTEP_TENONE = "ASTEP_TENONE";
 export const ASTEP_TENTWO = "ASTEP_TENTWO";
+export const ASTEP_TENTHREE = "ASTEP_TENTHREE";
+export const ASTEP_TENFOUR = "ASTEP_TENFOUR";
 export const BSTEP_ONE = "BSTEP_ONE";
 export const BSTEP_TWO = "BSTEP_TWO";
 export const BSTEP_THREE = "BSTEP_THREE";
@@ -23,6 +25,8 @@ export const BSTEP_NINE = "BSTEP_NINE";
 export const BSTEP_TEN = "BSTEP_TEN";
 export const BSTEP_TENONE = "BSTEP_TENONE";
 export const BSTEP_TENTWO = "BSTEP_TENTWO";
+export const BSTEP_TENTHREE = "BSTEP_TENTHREE";
+export const BSTEP_TENFOUR = "BSTEP_TENFOUR";
 
 export function increment() {
   return {
@@ -102,6 +106,18 @@ export function step_tentwoA() {
   };
 }
 
+export function step_tenthreeA() {
+  return {
+    type: ASTEP_TENTHREE,
+  };
+}
+
+export function step_tenfourA() {
+  return {
+    type: ASTEP_TENFOUR,
+  };
+}
+
 export function step_oneB() {
   return {
     type: BSTEP_ONE,
@@ -171,5 +187,17 @@ export function step_tenoneB() {
 export function step_tentwoB() {
   return {
     type: BSTEP_TENTWO,
+  };
+}
+
+export function step_tenthreeB() {
+  return {
+    type: BSTEP_TENTHREE,
+  };
+}
+
+export function step_tenfourB() {
+  return {
+    type: BSTEP_TENFOUR,
   };
 }

@@ -2,26 +2,26 @@ import React from "react";
 import "../App.css";
 import ButtonComponent from "./ButtonComponent";
 
-const Q13 = () => {
+const Q14 = () => {
   return (
     <form>
       <div className="qa-container">
-        <p className="q-txt">나는 OO 수업을 선호한다</p>
+        <p className="q-txt">내가 선호하는 강의는</p>
         <ButtonComponent
-          step={13}
+          step={14}
           type={"A"}
-          txt={"대면"}
-          imgUrl={"./imgs/q_13_1.jpg"}
+          txt={"대학영어"}
+          imgUrl={"./imgs/q_14_1.jpg"}
         ></ButtonComponent>
         <ButtonComponent
-          step={13}
+          step={14}
           type={"B"}
-          txt={"비대면"}
-          imgUrl={"./imgs/q_13_2.jpg"}
+          txt={"우글(통글)"}
+          imgUrl={"./imgs/q_14_2.png"}
         ></ButtonComponent>
       </div>
     </form>
   );
 };
 
-export default Q13;
+export default Q14;

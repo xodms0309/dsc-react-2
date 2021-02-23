@@ -12,6 +12,8 @@ import {
   ASTEP_TEN,
   ASTEP_TENONE,
   ASTEP_TENTWO,
+  ASTEP_TENTHREE,
+  ASTEP_TENFOUR,
   BSTEP_ONE,
   BSTEP_TWO,
   BSTEP_THREE,
@@ -24,6 +26,8 @@ import {
   BSTEP_TEN,
   BSTEP_TENONE,
   BSTEP_TENTWO,
+  BSTEP_TENTHREE,
+  BSTEP_TENFOUR,
 } from "../actions";
 import { combineReducers } from "redux";
 
@@ -268,6 +272,40 @@ const counter = (state = counterInitialState, action) => {
         Scranton: state.Scranton + 10,
         Hokma: state.Hokma + 11,
       });
+    case ASTEP_TENTHREE:
+      return Object.assign({}, state, {
+        LiberalArts: state.LiberalArts + 14,
+        SocialSciences: state.SocialSciences + 13,
+        NaturalScience: state.NaturalScience + 8,
+        Engineering: state.Engineering + 6,
+        Music: state.Music + 1,
+        ArtAndDesign: state.ArtAndDesign + 2,
+        Education: state.Education + 4,
+        BusinessAdministration: state.BusinessAdministration + 12,
+        ScienceAndIndustry: state.ScienceAndIndustry + 5,
+        Medicine: state.Medicine + 9,
+        Nursing: state.Nursing + 7,
+        Pharmacy: state.Pharmacy + 3,
+        Scranton: state.Scranton + 10,
+        Hokma: state.Hokma + 11,
+      });
+    case ASTEP_TENFOUR:
+      return Object.assign({}, state, {
+        LiberalArts: state.LiberalArts + 14,
+        SocialSciences: state.SocialSciences + 13,
+        NaturalScience: state.NaturalScience + 8,
+        Engineering: state.Engineering + 6,
+        Music: state.Music + 1,
+        ArtAndDesign: state.ArtAndDesign + 2,
+        Education: state.Education + 4,
+        BusinessAdministration: state.BusinessAdministration + 12,
+        ScienceAndIndustry: state.ScienceAndIndustry + 5,
+        Medicine: state.Medicine + 9,
+        Nursing: state.Nursing + 7,
+        Pharmacy: state.Pharmacy + 3,
+        Scranton: state.Scranton + 10,
+        Hokma: state.Hokma + 11,
+      });
     case BSTEP_ONE:
       return Object.assign({}, state, {
         LiberalArts: state.LiberalArts + 11,
@@ -456,6 +494,40 @@ const counter = (state = counterInitialState, action) => {
         Hokma: state.Hokma + 6,
       });
     case BSTEP_TENTWO:
+      return Object.assign({}, state, {
+        LiberalArts: state.LiberalArts + 1,
+        SocialSciences: state.SocialSciences + 2,
+        NaturalScience: state.NaturalScience + 7,
+        Engineering: state.Engineering + 9,
+        Music: state.Music + 14,
+        ArtAndDesign: state.ArtAndDesign + 13,
+        Education: state.Education + 11,
+        BusinessAdministration: state.BusinessAdministration + 3,
+        ScienceAndIndustry: state.ScienceAndIndustry + 10,
+        Medicine: state.Medicine + 6,
+        Nursing: state.Nursing + 8,
+        Pharmacy: state.Pharmacy + 12,
+        Scranton: state.Scranton + 5,
+        Hokma: state.Hokma + 4,
+      });
+    case BSTEP_TENTHREE:
+      return Object.assign({}, state, {
+        LiberalArts: state.LiberalArts + 1,
+        SocialSciences: state.SocialSciences + 2,
+        NaturalScience: state.NaturalScience + 7,
+        Engineering: state.Engineering + 9,
+        Music: state.Music + 14,
+        ArtAndDesign: state.ArtAndDesign + 13,
+        Education: state.Education + 11,
+        BusinessAdministration: state.BusinessAdministration + 3,
+        ScienceAndIndustry: state.ScienceAndIndustry + 10,
+        Medicine: state.Medicine + 6,
+        Nursing: state.Nursing + 8,
+        Pharmacy: state.Pharmacy + 12,
+        Scranton: state.Scranton + 5,
+        Hokma: state.Hokma + 4,
+      });
+    case BSTEP_TENFOUR:
       return Object.assign({}, state, {
         LiberalArts: state.LiberalArts + 1,
         SocialSciences: state.SocialSciences + 2,

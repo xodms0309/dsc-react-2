@@ -14,6 +14,8 @@ import Q9 from './components/Q9';
 import Q10 from './components/Q10';
 import Q11 from './components/Q11';
 import Q12 from './components/Q12';
+import Q13 from './components/Q13';
+import Q14 from './components/Q14';
 import Result from './components/Result';
 
 

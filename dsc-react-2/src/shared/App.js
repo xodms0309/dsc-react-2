@@ -16,6 +16,8 @@ import {
   Q11,
   Q12,
   Q13,
+  Q14,
+  Q15,
   QLayout,
   StartPage,
   Result,
@@ -89,8 +91,18 @@ const App = () => {
           </QLayout>
         </Route>
         <Route path="/Q13" component={Q13}>
-          <QLayout step={12}>
+          <QLayout step={13}>
             <Q13></Q13>
+          </QLayout>
+        </Route>
+        <Route path="/Q14" component={Q14}>
+          <QLayout step={14}>
+            <Q14></Q14>
+          </QLayout>
+        </Route>
+        <Route path="/Q15" component={Q15}>
+          <QLayout step={14}>
+            <Q15></Q15>
           </QLayout>
         </Route>
         <Route path="/Result" component={Result}>
