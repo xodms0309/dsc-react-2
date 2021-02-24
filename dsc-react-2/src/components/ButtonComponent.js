@@ -110,7 +110,7 @@ function ButtonComponent(props) {
     else if (value === 11) return props.onStepTenoneA;
     else if (value === 12) return props.onStepTentwoA;
     else if (value === 13) return props.onStepTenthreeA;
-    else return props.onStepTentwoA;
+    else return props.onStepTenfourA;
   }
 
   function selectB(value) {
@@ -127,7 +127,7 @@ function ButtonComponent(props) {
     else if (value === 11) return props.onStepTenoneB;
     else if (value === 12) return props.onStepTentwoB;
     else if (value === 13) return props.onStepTenthreeB;
-    else return props.onStepTentwoB;
+    else return props.onStepTenfourB;
   }
 
   return (
